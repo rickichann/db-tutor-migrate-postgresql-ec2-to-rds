@@ -1,4 +1,4 @@
 # db-tutor-migrate-postgresql-ec2-to-rds
 
 
-![image](https://github.com/user-attachments/assets/08ded8af-d1e3-44cf-b801-9cdb0ef04e57)
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/5b994348-e5bd-4763-b821-f1f95c914633" />
