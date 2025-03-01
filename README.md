@@ -20,7 +20,7 @@ Then, execute the following command to create a database dump:
 ```sh
 sudo -u postgres PGPASSWORD="<password>" pg_dumpall -U <username> -f /tmp/dump.sql
 ```
-The dump file will be saved in the `/tmp` directory with the name `sl_dump_v1.sql`.
+The dump file will be saved in the `/tmp` directory with the name `dump.sql`.
 
 ---
 
@@ -41,7 +41,7 @@ Use the following command to restore the database:
 ```sh
 PGPASSWORD="<password>" psql -h <rds_endpoint> -U postgres -f /var/tmp/dump.sql
 ```
-Ensure that the dump file (`sl_trial_dump.sql`) is available in the `/var/tmp` directory before executing this command.
+Ensure that the dump file (`dump.sql`) is available in the `/var/tmp` directory before executing this command.
 
 ### Step 4: Validate the Restore Result
 After the restore process is complete, validate the data by logging into the database and checking the records:
