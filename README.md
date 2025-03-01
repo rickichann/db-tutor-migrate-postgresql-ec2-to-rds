@@ -18,7 +18,7 @@ sudo -i -u postgres psql
 ```
 Then, execute the following command to create a database dump:
 ```sh
-sudo -u postgres PGPASSWORD="<password>" pg_dumpall -U <username> -f var/tmp/dump.sql
+sudo -u postgres PGPASSWORD="<password>" pg_dumpall -U <username> -f /var/tmp/dump.sql
 ```
 The dump file will be saved in the `/tmp` directory with the name `dump.sql`.
 
