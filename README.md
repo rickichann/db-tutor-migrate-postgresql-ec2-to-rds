@@ -3,13 +3,19 @@
 
 <img width="850" alt="image" src="https://github.com/user-attachments/assets/5b994348-e5bd-4763-b821-f1f95c914633" />
 
+Migrating PostgreSQL from EC2 to AWS RDS with a Complete Backup and Restore Guide
 
-# Guide to Backup and Restore PostgreSQL Database on AWS
+
+Why Migrate from PostgreSQL on EC2 to AWS RDS?
+
+Managing PostgreSQL on an EC2 instance provides flexibility, but it also comes with challenges such as manual maintenance, scaling issues, and high availability concerns. By migrating to Amazon RDS, users can take advantage of automated backups, easy scalability, and built-in high availability features. This guide provides a step-by-step process to back up your PostgreSQL database from an EC2 instance and restore it to an Amazon RDS instance.
+
+
 
 ## Backup PostgreSQL Database
 
 ### Step 1: Access AWS Systems Manager (SSM)
-Use AWS SSM to log in to the EC2 instance that will be used for database backup.
+Use AWS SSM to log in to the PostgreSQL EC2 instance.
 
 ### Step 2: Run the Backup Command
 Run the following command to access PostgreSQL:
@@ -27,7 +33,7 @@ The dump file will be saved in the `/var/tmp` directory with the name `dump.sql`
 ## Restore PostgreSQL Database to RDS
 
 ### Step 1: Access AWS Systems Manager (SSM)
-Use AWS SSM to log in to the EC2 instance that will be used for database restoration.
+Use AWS SSM to log in to the PostgreSQL EC2 instance.
 
 ### Step 2: Ensure EC2 Connectivity to RDS
 Check the connectivity between EC2 and RDS using the following command:
