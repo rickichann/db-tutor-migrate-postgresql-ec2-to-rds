@@ -14,13 +14,13 @@ Use AWS SSM to log in to the EC2 instance that will be used for database backup.
 ### Step 2: Run the Backup Command
 Run the following command to access PostgreSQL:
 ```sh
-sudo -i -u postgres psql
+sudo -i -u postgres
 ```
 Then, execute the following command to create a database dump:
 ```sh
-pg_dumpall -U postgres -f /var/tmp/dump.sql
+pg_dumpall -U postgres -f /var/tmp/dump.sql -v
 ```
-The dump file will be saved in the `/tmp` directory with the name `dump.sql`.
+The dump file will be saved in the `/var/tmp` directory with the name `dump.sql`.
 
 ---
 
