@@ -1,7 +1,8 @@
 # db-tutor-migrate-postgresql-ec2-to-rds
 
 
-<img width="850" alt="image" src="https://github.com/user-attachments/assets/5b994348-e5bd-4763-b821-f1f95c914633" />
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/91752ced-0645-46e8-a842-9b56e2c45682" />
+
 
 Migrating PostgreSQL from EC2 to AWS RDS with a Complete Backup and Restore Guide
 
