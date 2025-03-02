@@ -62,8 +62,6 @@ If all data has been successfully restored, the process is complete.
 ## Additional Notes
 - Replace `<password>`, `<username>`, `<rds_endpoint>`, and `<table_name>` with your actual configuration.
 - Ensure you have the necessary permissions to perform database backup and restore operations.
-- To enhance security, avoid storing passwords in direct commands. Use configuration files or environment variables instead.
-- If you have tables in the `postgres`, `template0`, or `template1` databases, they will not be migrated. You must move those tables to a new database manually.
 
 ---
 
